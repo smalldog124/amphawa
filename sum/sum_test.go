@@ -89,3 +89,13 @@ func Test_Sum_Input_Any_Should_Be_0(t *testing.T) {
 		t.Errorf("expect %d but it got %d", expected, actual)
 	}
 }
+func Test_SumRecursion_Input_1_2_3_4_Should_Be_10(t *testing.T) {
+	numbers := []uint64{1, 2, 3, 4}
+	expected := uint64(10)
+
+	actual := SumRecursion(numbers)
+
+	if expected != actual {
+		t.Errorf("expect %d but it got %d", expected, actual)
+	}
+}
